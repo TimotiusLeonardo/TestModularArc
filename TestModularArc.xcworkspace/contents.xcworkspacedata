@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../MyFramework/MyFramework.xcodeproj">
+      location = "group:MyFramework/MyFramework.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:TestModularArc.xcodeproj">
