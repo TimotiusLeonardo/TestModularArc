@@ -13,7 +13,23 @@
 		FFB9E2802876CC1100C7C51D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB9E27E2876CC1100C7C51D /* Main.storyboard */; };
 		FFB9E2822876CC1400C7C51D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB9E2812876CC1400C7C51D /* Assets.xcassets */; };
 		FFB9E2852876CC1400C7C51D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB9E2832876CC1400C7C51D /* LaunchScreen.storyboard */; };
+		FFB9E2B42876CE2A00C7C51D /* MyFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB9E2B32876CE2A00C7C51D /* MyFramework.framework */; };
+		FFB9E2B52876CE2A00C7C51D /* MyFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FFB9E2B32876CE2A00C7C51D /* MyFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FFB9E2B62876CE2A00C7C51D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FFB9E2B52876CE2A00C7C51D /* MyFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FFB9E2752876CC1100C7C51D /* TestModularArc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestModularArc.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +40,7 @@
 		FFB9E2812876CC1400C7C51D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFB9E2842876CC1400C7C51D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFB9E2862876CC1400C7C51D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFB9E2B32876CE2A00C7C51D /* MyFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MyFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFB9E2B42876CE2A00C7C51D /* MyFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +60,7 @@
 			children = (
 				FFB9E2772876CC1100C7C51D /* TestModularArc */,
 				FFB9E2762876CC1100C7C51D /* Products */,
+				FFB9E2B22876CE2A00C7C51D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +86,14 @@
 			path = TestModularArc;
 			sourceTree = "<group>";
 		};
+		FFB9E2B22876CE2A00C7C51D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFB9E2B32876CE2A00C7C51D /* MyFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +104,7 @@
 				FFB9E2712876CC1100C7C51D /* Sources */,
 				FFB9E2722876CC1100C7C51D /* Frameworks */,
 				FFB9E2732876CC1100C7C51D /* Resources */,
+				FFB9E2B62876CE2A00C7C51D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
